@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+main()
+{
+	int a;
+	int b;
+	int c;
+	int d;
+	int e;
+	
+	a = 22;
+	c = 0;
+	d = 1;
+	
+	cout << "These are the first 20 fibonacci numbers";
+	cin.ignore();
+	cout << "Fibonacci numbers:\n" ;
+	
+	for (b=0;b<a;b++)
+	{
+		if (b<=1)
+		e = b;
+		
+		else
+		{
+			c = d;
+			d = e;
+			e = c + d;
+		}
+		cout << e << " , ";
+		
+	}
+	return 0;
+}
