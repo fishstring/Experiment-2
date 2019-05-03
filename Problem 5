@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int a;
+	int b;
+	
+	cout << " Counting ...\n";
+	
+	a = 0;
+	while ( a < 10)
+	{
+		b = a + 1;
+		cout << b << " , ";
+		a++;
+	}
+	a = 12 ;
+	while ( a >= 12 && a<=30)
+	{
+		b = a++;
+		cout << b << " , ";
+		a++;
+	}
+	
+	return 0;
+	
+}
