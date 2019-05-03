@@ -1,0 +1,88 @@
+#include <iostream>
+#include <cmath>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	int x;
+	float y;
+	float v;
+	float a;
+	float z;
+
+	
+	cout << "Enter two numbers x =";
+	cin >> x;
+	
+	z = 2.5;
+	
+	switch (x)
+	{
+		case 1:
+			{
+				(x==1);
+				cout << "y =";
+				cin >> y;
+				if (y > 1 && y <5)
+				{
+					v = y*z;
+					cout << setw (10);
+					cout << fixed << setprecision(2)<< v;
+					
+				}
+				else if (y >= 5)
+				{
+					v = 1 + (y/z);
+					cout << setw (10);
+					cout << fixed << setprecision(2) << v;
+					
+				}
+				else
+				cout <<"invalid values";
+				break;
+				
+			}
+			case 2:
+				{
+					(x==2);
+					cout <<"y = ";
+					cin >> y;
+					if (y<=5)
+					{
+						v = (2-y)/z;
+						if (v<0)
+						{
+							a = v*-1;
+							cout << setw(10);
+							cout << fixed << setprecision(2) << v;
+						}
+						
+					}
+					else if (y>5)
+					{
+						v = 2 - (sqrt(y)) + 5;
+						
+						
+						cout << setw (10);
+						cout << fixed << setprecision(2) << v;
+						
+					}
+					else
+					cout << "invalid values";
+					break;
+				}
+				default:
+					{
+						cout << "y=";
+						cin >> y;
+						v = x + y + z;
+						cout << setw (10);
+						cout << fixed <<setprecision(2)<< v;
+						
+					}
+				
+	}
+	return 0;
+}
