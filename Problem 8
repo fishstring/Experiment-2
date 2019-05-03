@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	float a;
+	float b;
+	float c;
+	float d;
+	
+	cout << "Enter a number";
+	cin >> b;
+	cout << "The multiplication table of " << b << "\n";
+	
+	c=0;
+	while ( c<10)
+	{
+		a = c + 1;
+		d = a * b;
+		cout << a << "*" << b << " = " << d << " \n";
+		c++;
+		
+	}
+	return 0;
+}
