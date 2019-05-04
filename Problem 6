@@ -4,11 +4,7 @@ using namespace std;
 
 main()
 {
-	int a;
-	int b;
-	int c;
-	int d;
-	int e;
+	int a, b, c, d, e;
 	
 	a = 22;
 	c = 0;
