@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	
+	cout << "enter a number \n";
+
+	int sum, a, b, c;
+	do 
+	{
+		sum = 0;
+		cin >>a;
+		for (b=1; b<=a; b++)
+		sum+= b;
+		cout << " The sum of all the numbers is :" << sum;
+	}while(a!=0);
+	while(a==0)
+	{
+	break;	
+	}
+	
+	return 0;
+}
