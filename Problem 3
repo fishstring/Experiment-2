@@ -6,11 +6,7 @@ using namespace std;
 
 int main()
 {
-	int x;
-	float y;
-	float v;
-	float a;
-	float z;
+	int x, y, v, a, z;
 
 	
 	cout << "Enter two numbers x =";
