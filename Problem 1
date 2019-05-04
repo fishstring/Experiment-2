@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int hours, add, times, total;
+	char package;
+	
+	cout << "Enter which package you subscribe to \n";
+	cout << "Package A \n";
+	cout << "Package B \n";
+	cout << "Package C \n";
+	cin >> package;
+	cout << "Enter how many hours is used \n";
+	cin >> hours;
+	
+	switch (package)
+	{
+		case 'a':
+		case 'A':
+			if (hours >10)
+			add = hours - 10;
+			times = add * 20;
+			total = times + 995;
+			cout << "your total amount due is "<< total;
+			if (hours <= 10)
+			cout << " your total amount due is 995";
+			
+			break;
+			
+		case 'b':
+		case 'B':
+			if (hours >20)
+			add = hours - 20;
+			times = add * 10;
+			total = times + 1495;
+			cout << "your total amount due is "<< total;
+			
+			if (hours <= 20)
+			cout << " your total amount due is 1495";
+			
+			break;
+			
+		case 'c':
+		case 'C':
+	
+			cout << "your total amount due is 1995 "<< total;
+			break;
+			
+	}
+	
+	
+	return 0;
+	
+	
+}
