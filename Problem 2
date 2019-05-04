@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	float gallon, f, s, totalf, totals,totall;
+	
+	cout << "enter how much gallon used for this month"; cin >> f;
+	cout <<" enter how much gallon used for last month"; cin >> g;
+	
+	totalf = f * 1.10;
+	totalg = g * 1.10;
+	totall = totalf + totalg + 35;
+	
+	cout << "your balance is" << totall;
+	
+	return 0;
+}
